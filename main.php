@@ -1,8 +1,8 @@
 <?php
 
-require 'clasees/Console.php';
-require 'clasees/MortgageCalculator.php';
-require 'clasees/MortgageReport.php';
+require 'classes/Console.php';
+require 'classes/MortgageCalculator.php';
+require 'classes/MortgageReport.php';
 
 $principal = Console::readNumber("Principal:", 1000, 1000_000);
 $annualInterest = Console::readNumber("Annual Interest Rate:", 1, 30);
