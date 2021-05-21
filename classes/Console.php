@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 class Console
 {
-    public static function readNumber(string $prompt, int $min, int $max)
+    public static function readNumber(string $prompt, int $min, int $max): float
     {
         $value = 0;
         while (true) {
@@ -15,6 +15,6 @@ class Console
             print("Enter a value between " . $min . " and " . $max . "\n");
         }
 
-        return (float)$value;
+        return (float) $value;
     }
 }
