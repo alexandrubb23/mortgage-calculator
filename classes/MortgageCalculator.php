@@ -43,6 +43,7 @@ class MortgageCalculator
 
     public function getRemainingBalance(): array
     {
+        $balances = [];
         for ($month = 1; $month <= $this->getNumberOfPayments(); $month++)
             $balances[$month - 1] = $this->calculateBalance($month);
 
